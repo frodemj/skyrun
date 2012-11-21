@@ -2,6 +2,7 @@ package test;
 
 public class HelloSky {
 	public static void main(String[] args) {
-		System.out.println("Skyxxxxx Hello");
+		for (String arg : args)
+		System.out.printf("Sky Hello: %s%n", arg);
 	}
 }
