@@ -8,6 +8,6 @@ public class Test1Servlet extends HttpServlet {
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
 			throws IOException {
 		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello, Sky");
+		resp.getWriter().println("Hello, BlueSky");
 	}
 }
