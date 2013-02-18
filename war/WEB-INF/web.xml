@@ -18,6 +18,15 @@
 		<url-pattern>/test1</url-pattern>
 	</servlet-mapping>
 
+	<servlet>
+		<servlet-name>Kjetil</servlet-name>
+		<servlet-class>test.KjetilServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Kjetil</servlet-name>
+		<url-pattern>/kjetil</url-pattern>
+	</servlet-mapping>
+
 	<welcome-file-list>
 		<welcome-file>index.html</welcome-file>
 	</welcome-file-list>
