@@ -15,5 +15,6 @@ public class KjetilServlet extends HttpServlet {
 	    resp.setHeader("Refresh", "2; URL=kjetil/kjetil.jsp");
 	    resp.getWriter().println("You will be redirected");
 	}
+	
 
 }
