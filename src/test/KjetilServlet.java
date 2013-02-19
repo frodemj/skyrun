@@ -8,17 +8,12 @@ import javax.servlet.http.HttpServletResponse;
 
 @SuppressWarnings("serial")
 public class KjetilServlet extends HttpServlet {
+
 	public void doGet(HttpServletRequest req, HttpServletResponse resp)
-			throws IOException 
-	{
+			throws IOException {
 		resp.setContentType("text/plain");
-		resp.getWriter().println("Hello from KjetilServlet.  You are being redirected in 2 seconds...");
-		try {
-			Thread.sleep(2000);
-		} catch (InterruptedException e) {
-			// TODO Auto-generated catch block
-			e.printStackTrace();
-		}
-		resp.sendRedirect("kjetil/kjetil.jsp");
+	    resp.setHeader("Refresh", "2; URL=kjetil/kjetil.jsp");
+	    resp.getWriter().println("You will be redirected");
 	}
+
 }
